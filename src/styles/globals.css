@@ -24,4 +24,9 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: "Poppins", sans-serif;
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 3px 0px #87ceeb7a;
 }
