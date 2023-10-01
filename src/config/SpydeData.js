@@ -77,27 +77,55 @@ const SpydeData = {
         label: "Get Service",
         href: "#",
       },
-      specialization: [
-        {
-          name: "Interactive Website",
-          details:
-            "We can make any type of interactive website for your business",
-        },
-        {
-          name: "Responsive Design",
-          details: "Responsive website is important for every website",
-        },
-        {
-          name: "SEO Friendly",
-          details:
-            "We can make any type of interactive website for your business",
-        },
-        {
-          name: "Web Security",
-          details:
-            "We can make any type of interactive website for your business",
-        },
-      ],
+      specializationData: {
+        heading: "Our Specialization",
+        detail:
+          "This specialization makes us unique. And we are so expert and passionate  with our skill and works.",
+        specialization: [
+          {
+            name: "Interactive Website",
+            details:
+              "We can make any type of interactive website for your business",
+          },
+          {
+            name: "Responsive Design",
+            details: "Responsive website is important for every website",
+          },
+          {
+            name: "SEO Friendly",
+            details:
+              "We can make any type of interactive website for your business",
+          },
+          {
+            name: "Web Security",
+            details:
+              "We can make any type of interactive website for your business",
+          },
+        ],
+      },
+      techStack: {
+        heading: "Tech Stack We Follow",
+        detail:
+          "Our team is expart on this tech stack and they have lot of experience about it. and they are learning more of tech stacks.",
+        specialization: [
+          {
+            name: "React.js",
+            icon: "",
+          },
+          {
+            name: "Next.js",
+            icon: "",
+          },
+          {
+            name: "JavaScript",
+            icon: "",
+          },
+          {
+            name: "More...",
+            icon: "",
+          },
+        ],
+      },
     },
     {
       name: "Shopify Expert",
@@ -108,28 +136,55 @@ const SpydeData = {
         label: "Get Service",
         href: "#",
       },
-
-      specialization: [
-        {
-          name: "Interactive Website",
-          details:
-            "We can make any type of interactive website for your business",
-        },
-        {
-          name: "Responsive Design",
-          details: "Responsive website is important for every website",
-        },
-        {
-          name: "SEO Friendly",
-          details:
-            "We can make any type of interactive website for your business",
-        },
-        {
-          name: "Web Security",
-          details:
-            "We can make any type of interactive website for your business",
-        },
-      ],
+      specializationData: {
+        heading: "Our Specialization",
+        detail:
+          "This specialization makes us unique. And we are so expert and passionate  with our skill and works.",
+        specialization: [
+          {
+            name: "Interactive Website",
+            details:
+              "We can make any type of interactive website for your business",
+          },
+          {
+            name: "Responsive Design",
+            details: "Responsive website is important for every website",
+          },
+          {
+            name: "SEO Friendly",
+            details:
+              "We can make any type of interactive website for your business",
+          },
+          {
+            name: "Web Security",
+            details:
+              "We can make any type of interactive website for your business",
+          },
+        ],
+      },
+      techStack: {
+        heading: "Tech Stack We Follow",
+        detail:
+          "Our team is expart on this tech stack and they have lot of experience about it. and they are learning more of tech stacks.",
+        specialization: [
+          {
+            name: "React.js",
+            icon: "",
+          },
+          {
+            name: "Next.js",
+            icon: "",
+          },
+          {
+            name: "JavaScript",
+            icon: "",
+          },
+          {
+            name: "More...",
+            icon: "",
+          },
+        ],
+      },
     },
     {
       name: "WooCommerce Expert",
@@ -140,27 +195,55 @@ const SpydeData = {
         label: "Get Service",
         href: "#",
       },
-      specialization: [
-        {
-          name: "Interactive Website",
-          details:
-            "We can make any type of interactive website for your business",
-        },
-        {
-          name: "Responsive Design",
-          details: "Responsive website is important for every website",
-        },
-        {
-          name: "SEO Friendly",
-          details:
-            "We can make any type of interactive website for your business",
-        },
-        {
-          name: "Web Security",
-          details:
-            "We can make any type of interactive website for your business",
-        },
-      ],
+      specializationData: {
+        heading: "Our Specialization",
+        detail:
+          "This specialization makes us unique. And we are so expert and passionate  with our skill and works.",
+        specialization: [
+          {
+            name: "Interactive Website",
+            details:
+              "We can make any type of interactive website for your business",
+          },
+          {
+            name: "Responsive Design",
+            details: "Responsive website is important for every website",
+          },
+          {
+            name: "SEO Friendly",
+            details:
+              "We can make any type of interactive website for your business",
+          },
+          {
+            name: "Web Security",
+            details:
+              "We can make any type of interactive website for your business",
+          },
+        ],
+      },
+      techStack: {
+        heading: "Tech Stack We Follow",
+        detail:
+          "Our team is expart on this tech stack and they have lot of experience about it. and they are learning more of tech stacks.",
+        specialization: [
+          {
+            name: "React.js",
+            icon: "",
+          },
+          {
+            name: "Next.js",
+            icon: "",
+          },
+          {
+            name: "JavaScript",
+            icon: "",
+          },
+          {
+            name: "More...",
+            icon: "",
+          },
+        ],
+      },
     },
     {
       name: "Social media marketing",
@@ -171,27 +254,55 @@ const SpydeData = {
         label: "Get Service",
         href: "#",
       },
-      specialization: [
-        {
-          name: "Interactive Website",
-          details:
-            "We can make any type of interactive website for your business",
-        },
-        {
-          name: "Responsive Design",
-          details: "Responsive website is important for every website",
-        },
-        {
-          name: "SEO Friendly",
-          details:
-            "We can make any type of interactive website for your business",
-        },
-        {
-          name: "Web Security",
-          details:
-            "We can make any type of interactive website for your business",
-        },
-      ],
+      specializationData: {
+        heading: "Our Specialization",
+        detail:
+          "This specialization makes us unique. And we are so expert and passionate  with our skill and works.",
+        specialization: [
+          {
+            name: "Interactive Website",
+            details:
+              "We can make any type of interactive website for your business",
+          },
+          {
+            name: "Responsive Design",
+            details: "Responsive website is important for every website",
+          },
+          {
+            name: "SEO Friendly",
+            details:
+              "We can make any type of interactive website for your business",
+          },
+          {
+            name: "Web Security",
+            details:
+              "We can make any type of interactive website for your business",
+          },
+        ],
+      },
+      techStack: {
+        heading: "Tech Stack We Follow",
+        detail:
+          "Our team is expart on this tech stack and they have lot of experience about it. and they are learning more of tech stacks.",
+        specialization: [
+          {
+            name: "React.js",
+            icon: "",
+          },
+          {
+            name: "Next.js",
+            icon: "",
+          },
+          {
+            name: "JavaScript",
+            icon: "",
+          },
+          {
+            name: "More...",
+            icon: "",
+          },
+        ],
+      },
     },
     {
       name: "Graphics design",
@@ -202,27 +313,55 @@ const SpydeData = {
         label: "Get Service",
         href: "#",
       },
-      specialization: [
-        {
-          name: "Interactive Website",
-          details:
-            "We can make any type of interactive website for your business",
-        },
-        {
-          name: "Responsive Design",
-          details: "Responsive website is important for every website",
-        },
-        {
-          name: "SEO Friendly",
-          details:
-            "We can make any type of interactive website for your business",
-        },
-        {
-          name: "Web Security",
-          details:
-            "We can make any type of interactive website for your business",
-        },
-      ],
+      specializationData: {
+        heading: "Our Specialization",
+        detail:
+          "This specialization makes us unique. And we are so expert and passionate  with our skill and works.",
+        specialization: [
+          {
+            name: "Interactive Website",
+            details:
+              "We can make any type of interactive website for your business",
+          },
+          {
+            name: "Responsive Design",
+            details: "Responsive website is important for every website",
+          },
+          {
+            name: "SEO Friendly",
+            details:
+              "We can make any type of interactive website for your business",
+          },
+          {
+            name: "Web Security",
+            details:
+              "We can make any type of interactive website for your business",
+          },
+        ],
+      },
+      techStack: {
+        heading: "Tech Stack We Follow",
+        detail:
+          "Our team is expart on this tech stack and they have lot of experience about it. and they are learning more of tech stacks.",
+        specialization: [
+          {
+            name: "React.js",
+            icon: "",
+          },
+          {
+            name: "Next.js",
+            icon: "",
+          },
+          {
+            name: "JavaScript",
+            icon: "",
+          },
+          {
+            name: "More...",
+            icon: "",
+          },
+        ],
+      },
     },
   ],
 };
