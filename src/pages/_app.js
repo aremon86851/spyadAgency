@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import "@/styles/teams.css";
 import Head from "next/head";
 import "swiper/css";
 
@@ -11,7 +12,7 @@ export default function App({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }

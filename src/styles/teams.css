@@ -1,0 +1,6 @@
+.faces-behind-our-success {
+  display: flex;
+}
+.faces-behind-our-success::-webkit-scrollbar {
+  display: none;
+}
