@@ -13,7 +13,7 @@ const FAQ = ({ items }) => {
 
   return (
     <section className="">
-      <div className="container py-16 px-24">
+      <div className="container py-16 px-24 mx-auto">
         <Heading>Frequently Ask Questions</Heading>
         <p className={`w-2/4 -mt-4 text-base font-semibold mb-10`}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, eum
