@@ -85,6 +85,21 @@ body {
   border: none;
   outline: none;
 }
+@media screen and (max-width: 350px) {
+  .subscription-area-form div {
+    flex-direction: column;
+  }
+  .subscription-area-form div input {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .subscription-area-form div button {
+    display: block;
+    width: 100%;
+  }
+}
 
 .web-header {
   .dropdown-content {

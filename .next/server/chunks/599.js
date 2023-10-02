@@ -146,7 +146,7 @@ const Footer = ()=>{
                             })
                         }),
                         /*#__PURE__*/ jsx_runtime.jsx("div", {
-                            className: " rounded-lg subscription-area",
+                            className: "rounded-lg subscription-area",
                             children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("form", {
                                 className: "subscription-area-form",
                                 children: [
@@ -331,7 +331,7 @@ const Footer = ()=>{
                 /*#__PURE__*/ jsx_runtime.jsx("div", {
                     className: "md:hidden flex justify-center mb-6",
                     children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("ul", {
-                        className: "text-gray-300 dark:text-gray-400 font-medium flex gap-5",
+                        className: "text-gray-300 dark:text-gray-400 font-medium flex sm:flex-row flex-col gap-5",
                         children: [
                             /*#__PURE__*/ jsx_runtime.jsx("li", {
                                 children: /*#__PURE__*/ jsx_runtime.jsx("a", {

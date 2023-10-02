@@ -63,7 +63,7 @@ const Footer = () => {
               </span>
             </a>
           </div>
-          <div className=" rounded-lg subscription-area">
+          <div className="rounded-lg subscription-area">
             <form className="subscription-area-form">
               <span className="subscription-area-title text-white">
                 Subscribe to our newsletter.
@@ -173,7 +173,7 @@ const Footer = () => {
         </div>
         <FooterMenuAccordion items={footerMenu} />
         <div className="md:hidden flex justify-center mb-6">
-          <ul className="text-gray-300 dark:text-gray-400 font-medium flex gap-5">
+          <ul className="text-gray-300 dark:text-gray-400 font-medium flex sm:flex-row flex-col gap-5">
             <li>
               <a href="https://flowbite.com/" className="hover:underline">
                 Privacy & policy
