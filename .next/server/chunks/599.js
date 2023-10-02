@@ -1,9 +1,9 @@
 "use strict";
-exports.id = 118;
-exports.ids = [118];
+exports.id = 599;
+exports.ids = [599];
 exports.modules = {
 
-/***/ 7378:
+/***/ 8706:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -16,17 +16,116 @@ __webpack_require__.d(__webpack_exports__, {
 var jsx_runtime = __webpack_require__(5893);
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(6689);
+;// CONCATENATED MODULE: ./src/component/SharedComponent/FooterMenuAccordion.tsx
+
+
+const FooterMenuAccordion = ({ items })=>{
+    const [activeIndex, setActiveIndex] = (0,external_react_.useState)(1);
+    const handleClick = (index)=>{
+        setActiveIndex(index === activeIndex ? null : index);
+    };
+    return /*#__PURE__*/ jsx_runtime.jsx("section", {
+        className: "md:hidden block my-6",
+        children: /*#__PURE__*/ jsx_runtime.jsx("div", {
+            className: "accordion ",
+            children: items?.map((item, index)=>/*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    className: "accordion-item border-b-2 border-gray-400",
+                    children: [
+                        /*#__PURE__*/ jsx_runtime.jsx("div", {
+                            className: `accordion-title text-white font-semibold p-2  ${item.id === activeIndex ? "active" : ""}`,
+                            onClick: ()=>handleClick(item.id),
+                            children: item.title
+                        }),
+                        item.id === activeIndex && /*#__PURE__*/ jsx_runtime.jsx("div", {
+                            className: "accordion-content p-2",
+                            children: /*#__PURE__*/ jsx_runtime.jsx("ul", {
+                                className: "text-gray-300 dark:text-gray-400 font-medium",
+                                children: item.content.map((menu)=>/*#__PURE__*/ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+                                        children: [
+                                            typeof menu === "object" && /*#__PURE__*/ jsx_runtime.jsx(jsx_runtime.Fragment, {
+                                                children: /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                                    className: "mb-4",
+                                                    children: /*#__PURE__*/ jsx_runtime.jsx("a", {
+                                                        href: `/services/${menu.href}`,
+                                                        className: "hover:underline",
+                                                        children: menu.label
+                                                    })
+                                                })
+                                            }),
+                                            typeof menu !== "object" && /*#__PURE__*/ jsx_runtime.jsx(jsx_runtime.Fragment, {
+                                                children: /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                                    className: "mb-4",
+                                                    children: menu
+                                                })
+                                            })
+                                        ]
+                                    }))
+                            })
+                        })
+                    ]
+                }, item.id))
+        })
+    });
+};
+/* harmony default export */ const SharedComponent_FooterMenuAccordion = (FooterMenuAccordion);
+
 ;// CONCATENATED MODULE: ./src/component/SharedComponent/Footer.tsx
 
 
+
+const footerMenu = [
+    {
+        id: 1,
+        title: "Services",
+        content: [
+            {
+                label: "Web development",
+                href: "web-development"
+            },
+            {
+                label: "Wordpress expert",
+                href: "wordpress-expert"
+            },
+            {
+                label: "Shopify expert",
+                href: "shopify-expert"
+            },
+            {
+                label: "WooCommerce  expert",
+                href: "wordpress-expert"
+            },
+            {
+                label: "Social media marketing",
+                href: "social-media-marketing"
+            },
+            {
+                label: "Graphics design",
+                href: "graphics-design"
+            }
+        ]
+    },
+    {
+        id: 2,
+        title: "Industries",
+        content: [
+            "Health",
+            "Ecommerce",
+            "Business",
+            "IT Consult",
+            "Civilization",
+            "Ecommerce",
+            "Business"
+        ]
+    }
+];
 const Footer = ()=>{
     return /*#__PURE__*/ jsx_runtime.jsx("footer", {
         className: "can-we-do dark:bg-gray-900 md:pt-10 pb-3",
         children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-            className: "mx-auto w-full container py-4 px-24 lg:py-8 lg:pb-0",
+            className: "mx-auto w-full container py-4  xl:px-24 lg:px-16 px-5  lg:py-8 lg:pb-0",
             children: [
                 /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                    className: "grid grid-cols-2 items-start",
+                    className: "grid md:grid-cols-2 grid-cols-1 items-start",
                     children: [
                         /*#__PURE__*/ jsx_runtime.jsx("div", {
                             className: "mb-6 md:mb-0",
@@ -75,7 +174,7 @@ const Footer = ()=>{
                     ]
                 }),
                 /*#__PURE__*/ jsx_runtime.jsx("div", {
-                    className: "mt-20 mb-16",
+                    className: "mt-20 mb-16 md:block hidden",
                     children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                         className: "grid grid-cols-3 gap-8 sm:gap-6 sm:grid-cols-4",
                         children: [
@@ -93,14 +192,31 @@ const Footer = ()=>{
                                                 children: /*#__PURE__*/ jsx_runtime.jsx("a", {
                                                     href: "https://flowbite.com/",
                                                     className: "hover:underline",
-                                                    children: "Flowbite"
+                                                    children: "Web development"
                                                 })
                                             }),
                                             /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                                className: "mb-4",
                                                 children: /*#__PURE__*/ jsx_runtime.jsx("a", {
-                                                    href: "https://tailwindcss.com/",
+                                                    href: "https://flowbite.com/",
                                                     className: "hover:underline",
-                                                    children: "Tailwind CSS"
+                                                    children: "Wordpress expert"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                                className: "mb-4",
+                                                children: /*#__PURE__*/ jsx_runtime.jsx("a", {
+                                                    href: "https://flowbite.com/",
+                                                    className: "hover:underline",
+                                                    children: "Shopify expert"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                                className: "mb-4",
+                                                children: /*#__PURE__*/ jsx_runtime.jsx("a", {
+                                                    href: "https://flowbite.com/",
+                                                    className: "hover:underline",
+                                                    children: "Wocommerce expert"
                                                 })
                                             })
                                         ]
@@ -116,14 +232,15 @@ const Footer = ()=>{
                                             children: /*#__PURE__*/ jsx_runtime.jsx("a", {
                                                 href: "https://flowbite.com/",
                                                 className: "hover:underline",
-                                                children: "Flowbite"
+                                                children: "Social media marketing"
                                             })
                                         }),
                                         /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                            className: "mb-4",
                                             children: /*#__PURE__*/ jsx_runtime.jsx("a", {
-                                                href: "https://tailwindcss.com/",
+                                                href: "https://flowbite.com/",
                                                 className: "hover:underline",
-                                                children: "Tailwind CSS"
+                                                children: "Graphics design"
                                             })
                                         })
                                     ]
@@ -133,7 +250,7 @@ const Footer = ()=>{
                                 children: [
                                     /*#__PURE__*/ jsx_runtime.jsx("h2", {
                                         className: "mb-6 text-sm font-semibold uppercase text-white",
-                                        children: "Experties"
+                                        children: "Industries"
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("ul", {
                                         className: "text-gray-300 dark:text-gray-400 font-medium",
@@ -141,49 +258,94 @@ const Footer = ()=>{
                                             /*#__PURE__*/ jsx_runtime.jsx("li", {
                                                 className: "mb-4",
                                                 children: /*#__PURE__*/ jsx_runtime.jsx("a", {
-                                                    href: "https://github.com/themesberg/flowbite",
+                                                    href: "",
                                                     className: "hover:underline",
-                                                    children: "Github"
+                                                    children: "health"
                                                 })
                                             }),
                                             /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                                className: "mb-4",
                                                 children: /*#__PURE__*/ jsx_runtime.jsx("a", {
-                                                    href: "https://discord.gg/4eeurUVvTy",
+                                                    href: "",
                                                     className: "hover:underline",
-                                                    children: "Discord"
+                                                    children: "It agency"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                                className: "mb-4",
+                                                children: /*#__PURE__*/ jsx_runtime.jsx("a", {
+                                                    href: "",
+                                                    className: "hover:underline",
+                                                    children: "Ecommerce"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                                className: "mb-4",
+                                                children: /*#__PURE__*/ jsx_runtime.jsx("a", {
+                                                    href: "",
+                                                    className: "hover:underline",
+                                                    children: "Product"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                                className: "mb-4",
+                                                children: /*#__PURE__*/ jsx_runtime.jsx("a", {
+                                                    href: "",
+                                                    className: "hover:underline",
+                                                    children: "Agency"
                                                 })
                                             })
                                         ]
                                     })
                                 ]
                             }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime.jsx("h2", {
-                                        className: "mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white",
-                                        children: "Legal"
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("ul", {
-                                        className: "text-gray-300 dark:text-gray-400 font-medium",
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime.jsx("li", {
-                                                className: "mb-4",
-                                                children: /*#__PURE__*/ jsx_runtime.jsx("a", {
-                                                    href: "#",
-                                                    className: "hover:underline",
-                                                    children: "Privacy Policy"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime.jsx("li", {
-                                                children: /*#__PURE__*/ jsx_runtime.jsx("a", {
-                                                    href: "#",
-                                                    className: "hover:underline",
-                                                    children: "Terms & Conditions"
-                                                })
+                            /*#__PURE__*/ jsx_runtime.jsx("div", {
+                                children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("ul", {
+                                    className: "text-gray-300 mt-11 dark:text-gray-400 font-medium",
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                            className: "mb-4",
+                                            children: /*#__PURE__*/ jsx_runtime.jsx("a", {
+                                                href: "https://flowbite.com/",
+                                                className: "hover:underline",
+                                                children: "Social media"
                                             })
-                                        ]
-                                    })
-                                ]
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                            className: "mb-4",
+                                            children: /*#__PURE__*/ jsx_runtime.jsx("a", {
+                                                href: "https://flowbite.com/",
+                                                className: "hover:underline",
+                                                children: "Sales"
+                                            })
+                                        })
+                                    ]
+                                })
+                            })
+                        ]
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime.jsx(SharedComponent_FooterMenuAccordion, {
+                    items: footerMenu
+                }),
+                /*#__PURE__*/ jsx_runtime.jsx("div", {
+                    className: "md:hidden flex justify-center mb-6",
+                    children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("ul", {
+                        className: "text-gray-300 dark:text-gray-400 font-medium flex gap-5",
+                        children: [
+                            /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                children: /*#__PURE__*/ jsx_runtime.jsx("a", {
+                                    href: "https://flowbite.com/",
+                                    className: "hover:underline",
+                                    children: "Privacy & policy"
+                                })
+                            }),
+                            /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                children: /*#__PURE__*/ jsx_runtime.jsx("a", {
+                                    href: "https://flowbite.com/",
+                                    className: "hover:underline",
+                                    children: "Terms & condition"
+                                })
                             })
                         ]
                     })
@@ -191,21 +353,47 @@ const Footer = ()=>{
                 /*#__PURE__*/ jsx_runtime.jsx("hr", {
                     className: "my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:mt-8 mb-4"
                 }),
-                /*#__PURE__*/ jsx_runtime.jsx("div", {
-                    className: "sm:flex justify-center",
-                    children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("span", {
-                        className: "text-sm text-gray-500 sm:text-center dark:text-gray-400",
-                        children: [
-                            "\xa9 2023",
-                            " ",
-                            /*#__PURE__*/ jsx_runtime.jsx("a", {
-                                href: "https://flowbite.com/",
-                                className: "hover:underline",
-                                children: "Flowbite™"
-                            }),
-                            ". All Rights Reserved."
-                        ]
-                    })
+                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    className: "flex md:justify-between justify-center items-center",
+                    children: [
+                        /*#__PURE__*/ jsx_runtime.jsx("div", {
+                            children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("span", {
+                                className: "text-sm text-gray-500 sm:text-center dark:text-gray-400",
+                                children: [
+                                    "\xa9 2023",
+                                    " ",
+                                    /*#__PURE__*/ jsx_runtime.jsx("a", {
+                                        href: "https://flowbite.com/",
+                                        className: "hover:underline",
+                                        children: "Spyde"
+                                    }),
+                                    ". All Rights Reserved."
+                                ]
+                            })
+                        }),
+                        /*#__PURE__*/ jsx_runtime.jsx("div", {
+                            className: "md:block hidden",
+                            children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("ul", {
+                                className: "text-gray-300 dark:text-gray-400 font-medium flex gap-5",
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                        children: /*#__PURE__*/ jsx_runtime.jsx("a", {
+                                            href: "https://flowbite.com/",
+                                            className: "hover:underline",
+                                            children: "Privacy & policy"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime.jsx("li", {
+                                        children: /*#__PURE__*/ jsx_runtime.jsx("a", {
+                                            href: "https://flowbite.com/",
+                                            className: "hover:underline",
+                                            children: "Terms & condition"
+                                        })
+                                    })
+                                ]
+                            })
+                        })
+                    ]
                 })
             ]
         })
@@ -225,14 +413,14 @@ const DropdownContent = ()=>{
         className: "dropdown-content",
         children: /*#__PURE__*/ jsx_runtime.jsx("div", {
             children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                className: "inside-dropdown-content px-24  container mx-auto",
+                className: "inside-dropdown-content xl:px-24 lg:px-16 px-5 container mx-auto",
                 children: [
                     /*#__PURE__*/ jsx_runtime.jsx("h2", {
                         className: "font-bold text-2xl mb-7 text-blue-600",
                         children: "Our Services"
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                        className: "grid grid-cols-4 gap-6",
+                        className: "grid xl:grid-cols-4 grid-cols-3 gap-6",
                         children: [
                             /*#__PURE__*/ jsx_runtime.jsx("div", {
                                 children: /*#__PURE__*/ jsx_runtime.jsx("p", {
@@ -302,6 +490,7 @@ const DropdownContent = ()=>{
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime.jsx("div", {
+                                className: "xl:block hidden",
                                 children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("a", {
                                     href: "#",
                                     className: "p-8 text-left bg-local bg-gray-500 bg-center bg-no-repeat bg-cover rounded-lg bg-blend-multiply hover:bg-blend-multiply dark:hover:bg-blend-darken  justify-center items-start flex-col h-full last-col-drpdwn",
@@ -351,17 +540,17 @@ const DropdownContent = ()=>{
 
 const IndustriesDropdownContent = ()=>{
     return /*#__PURE__*/ jsx_runtime.jsx("div", {
-        className: "dropdown-content",
+        className: "dropdown-content md:block hidden",
         children: /*#__PURE__*/ jsx_runtime.jsx("div", {
             children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                className: "inside-dropdown-content px-24  container mx-auto",
+                className: "inside-dropdown-content xl:px-24 lg:px-16 px-5 container mx-auto",
                 children: [
                     /*#__PURE__*/ jsx_runtime.jsx("h2", {
                         className: "font-bold text-2xl mb-7 text-blue-600",
                         children: "Our Expertise Industry"
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                        className: "grid grid-cols-4 gap-6",
+                        className: "grid xl:grid-cols-4 grid-cols-3 gap-6",
                         children: [
                             /*#__PURE__*/ jsx_runtime.jsx("div", {
                                 children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("ul", {
@@ -425,6 +614,7 @@ const IndustriesDropdownContent = ()=>{
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime.jsx("div", {
+                                className: "xl:block  hidden",
                                 children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("a", {
                                     href: "#",
                                     className: "p-8 text-left bg-local bg-gray-500 bg-center bg-no-repeat bg-cover rounded-lg bg-blend-multiply hover:bg-blend-multiply dark:hover:bg-blend-darken  justify-center items-start flex-col h-full last-col-drpdwn",
@@ -469,14 +659,46 @@ const IndustriesDropdownContent = ()=>{
 };
 /* harmony default export */ const component_IndustriesDropdownContent = (IndustriesDropdownContent);
 
+;// CONCATENATED MODULE: ./src/component/SharedComponent/MobileDropdown.tsx
+
+
+
+const MobileDropdown = ({ menus })=>{
+    return /*#__PURE__*/ jsx_runtime.jsx("div", {
+        className: "md:hidden block",
+        children: /*#__PURE__*/ jsx_runtime.jsx("ul", {
+            className: "w-full space-y-1 text-center text-gray-500 list-inside dark:text-gray-400",
+            children: menus?.map((menu, i)=>/*#__PURE__*/ jsx_runtime.jsx(jsx_runtime.Fragment, {
+                    children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("li", {
+                        className: "items-center text-white py-1",
+                        children: [
+                            typeof menu === "object" && /*#__PURE__*/ jsx_runtime.jsx(jsx_runtime.Fragment, {
+                                children: /*#__PURE__*/ jsx_runtime.jsx((link_default()), {
+                                    className: "p-0",
+                                    href: `/services/${menu.href}`,
+                                    children: menu.label
+                                })
+                            }),
+                            typeof menu !== "object" && menu
+                        ]
+                    }, i)
+                }))
+        })
+    });
+};
+/* harmony default export */ const SharedComponent_MobileDropdown = (MobileDropdown);
+
 ;// CONCATENATED MODULE: ./src/component/SharedComponent/Header.tsx
 /* eslint-disable @next/next/no-html-link-for-pages */ 
 
 
 
 
+
 const Header = ()=>{
-    const [mobileMenuOpen, setMobileMenuOpen] = (0,external_react_.useState)(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = (0,external_react_.useState)(false);
+    const [isServiceMenuOpen, setIsServiceMenuOpen] = (0,external_react_.useState)(false);
+    const [isIndustriesMenuOpen, setIsIndustriesMenuOpen] = (0,external_react_.useState)(false);
     const navigation = [
         {
             href: "/",
@@ -495,12 +717,47 @@ const Header = ()=>{
             name: "Blogs"
         }
     ];
+    const industries = [
+        "Health",
+        "Ecommerce",
+        "Business",
+        "IT Consult",
+        "Civilization",
+        "Ecommerce",
+        "Business"
+    ];
+    const servicesMenu = [
+        {
+            label: "Web development",
+            href: "web-development"
+        },
+        {
+            label: "Wordpress expert",
+            href: "wordpress-expert"
+        },
+        {
+            label: "Shopify expert",
+            href: "shopify-expert"
+        },
+        {
+            label: "WooCommerce  expert",
+            href: "wordpress-expert"
+        },
+        {
+            label: "Social media marketing",
+            href: "social-media-marketing"
+        },
+        {
+            label: "Graphics design",
+            href: "graphics-design"
+        }
+    ];
     return /*#__PURE__*/ jsx_runtime.jsx("header", {
         className: "absolute inset-x-0 top-0 z-50 container web-header",
         children: /*#__PURE__*/ jsx_runtime.jsx("nav", {
             className: "can-we-do dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600",
             children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                className: "container flex flex-wrap items-center justify-between mx-auto py-4 px-24",
+                className: "container flex flex-wrap items-center justify-between mx-auto py-4 xl:px-24 lg:px-16 px-5",
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("a", {
                         href: "/",
@@ -525,6 +782,7 @@ const Header = ()=>{
                             className: "inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600",
                             "aria-controls": "navbar-sticky",
                             "aria-expanded": "false",
+                            onClick: ()=>setIsMobileMenuOpen(!isMobileMenuOpen),
                             children: [
                                 /*#__PURE__*/ jsx_runtime.jsx("span", {
                                     className: "sr-only",
@@ -548,7 +806,7 @@ const Header = ()=>{
                         })
                     }),
                     /*#__PURE__*/ jsx_runtime.jsx("div", {
-                        className: "items-center justify-between hidden w-full md:flex md:w-auto md:order-1",
+                        className: `items-center justify-between w-full md:flex md:w-auto md:order-1 ${isMobileMenuOpen ? "block" : "hidden"}`,
                         id: "navbar-sticky",
                         children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("ul", {
                             className: "flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700",
@@ -556,7 +814,7 @@ const Header = ()=>{
                                 /*#__PURE__*/ jsx_runtime.jsx("li", {
                                     children: /*#__PURE__*/ jsx_runtime.jsx("a", {
                                         href: "#",
-                                        className: "block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500",
+                                        className: "block py-2 pl-3 pr-4 text-white rounded md:p-0 ",
                                         "aria-current": "page",
                                         children: "Home"
                                     })
@@ -574,6 +832,7 @@ const Header = ()=>{
                                         /*#__PURE__*/ (0,jsx_runtime.jsxs)("a", {
                                             href: "#",
                                             className: "flex gap-2 items-center py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700",
+                                            onClick: ()=>setIsServiceMenuOpen(!isServiceMenuOpen),
                                             children: [
                                                 "Services",
                                                 /*#__PURE__*/ jsx_runtime.jsx("img", {
@@ -583,7 +842,13 @@ const Header = ()=>{
                                                 })
                                             ]
                                         }),
-                                        /*#__PURE__*/ jsx_runtime.jsx(SharedComponent_DropdownContent, {})
+                                        /*#__PURE__*/ jsx_runtime.jsx(SharedComponent_DropdownContent, {}),
+                                        /*#__PURE__*/ jsx_runtime.jsx("div", {
+                                            className: isServiceMenuOpen ? "block" : "hidden",
+                                            children: /*#__PURE__*/ jsx_runtime.jsx(SharedComponent_MobileDropdown, {
+                                                menus: servicesMenu
+                                            })
+                                        })
                                     ]
                                 }),
                                 /*#__PURE__*/ (0,jsx_runtime.jsxs)("li", {
@@ -592,6 +857,7 @@ const Header = ()=>{
                                         /*#__PURE__*/ (0,jsx_runtime.jsxs)("a", {
                                             href: "#",
                                             className: "flex gap-2 items-center py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700",
+                                            onClick: ()=>setIsIndustriesMenuOpen(!isIndustriesMenuOpen),
                                             children: [
                                                 "Industries",
                                                 /*#__PURE__*/ jsx_runtime.jsx("img", {
@@ -601,7 +867,13 @@ const Header = ()=>{
                                                 })
                                             ]
                                         }),
-                                        /*#__PURE__*/ jsx_runtime.jsx(component_IndustriesDropdownContent, {})
+                                        /*#__PURE__*/ jsx_runtime.jsx(component_IndustriesDropdownContent, {}),
+                                        /*#__PURE__*/ jsx_runtime.jsx("div", {
+                                            className: isIndustriesMenuOpen ? "block" : "hidden",
+                                            children: /*#__PURE__*/ jsx_runtime.jsx(SharedComponent_MobileDropdown, {
+                                                menus: industries
+                                            })
+                                        })
                                     ]
                                 }),
                                 /*#__PURE__*/ jsx_runtime.jsx("li", {
@@ -799,14 +1071,14 @@ const Blogs = ()=>{
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
         className: "bg-gray-100",
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            className: " container mx-auto px-24 py-14",
+            className: " container mx-auto xl:px-24 lg:px-16 px-5  py-14",
             children: [
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_SharedComponent_Heading__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
                     addClass: "text-center",
                     children: "Latest Blogs"
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: "grid grid-cols-3 gap-10",
+                    className: "grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10",
                     children: [
                         1,
                         2,
@@ -865,7 +1137,7 @@ const Blogs = ()=>{
 
 const Heading = ({ children, addClass = "" })=>{
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-        className: `text-4xl font-semibold mb-8 ${addClass}`,
+        className: `md:text-4xl text-3xl font-semibold md:mb-8 mb-6 ${addClass}`,
         children: children
     });
 };

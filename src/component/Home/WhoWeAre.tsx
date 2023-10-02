@@ -5,7 +5,7 @@ import Heading from "../SharedComponent/Heading";
 const WhoWeAre = () => {
   return (
     <section className="who-we-are-bg">
-      <div className="py-14 container mx-auto px-24">
+      <div className="py-14 container mx-auto xl:px-24 lg:px-16 px-5 ">
         {/* <Heading addClass="text-white">The Spyad-Agency</Heading>
         <p className="text-center w-3/4 mx-auto mb-10 text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas
@@ -13,7 +13,7 @@ const WhoWeAre = () => {
           deserunt dolorum voluptatem sequi optio voluptatum natus ullam?
           Cupiditate, quis.
         </p> */}
-        <div className="grid grid-cols-6 gap-10 items-center mb-10">
+        <div className="md:grid grid-cols-6 gap-10 items-center mb-10 hidden ">
           <div className="col-span-3">
             <h3 className="text-2xl font-bold text-white w-3/4">
               Our spyde agency provide the very good good good good good good
@@ -29,7 +29,7 @@ const WhoWeAre = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col-reverse md:flex-row items-center">
           <div className="md:w-1/2 px-4">
             <h3 className="text-2xl font-semibold text-white mb-3">
               Our Mission
@@ -47,7 +47,7 @@ const WhoWeAre = () => {
               Get started
             </button>
           </div>
-          <div className="md:w-1/2 px-4 mt-6 md:mt-0 text-end flex justify-end">
+          <div className="md:w-1/2 px-4 mt-6 md:mt-0 text-end flex justify-end md:mb-0 mb-3">
             <Image
               src="/images/whoWeAre.jpg"
               alt="Image by rawpixel.com on Freepik"

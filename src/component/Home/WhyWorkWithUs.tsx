@@ -19,16 +19,18 @@ const WhyWorkWithUs = () => {
   ];
   return (
     <section className="bg-gray-100">
-      <div className="container mx-auto px-24 py-14">
-        <Heading addClass="text-center">Reasons to Choose Us</Heading>
-        <div className="flex justify-between gap-6 px-24 pt-20">
+      <div className="container mx-auto xl:px-24 lg:px-16 px-5 py-14">
+        <Heading addClass="md:text-center text-left">
+          Reasons to Choose Us
+        </Heading>
+        <div className="flex justify-between sm:flex-row flex-col gap-6 xl:px-24 lg:px-16 px-5  pt-20">
           {workWithUs.map((work, i) => (
             <>
               <div className="text-center">
                 <div className="w-full text-center flex justify-center mb-4">
                   <Image src={work.img} alt="" height={120} width={120} />
                 </div>
-                <h5 className="group-hover:text-white mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                <h5 className="group-hover:text-white mb-1 md:text-xl text-base font-medium text-gray-900 dark:text-white">
                   {work.heading}
                 </h5>
               </div>

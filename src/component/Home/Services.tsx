@@ -36,15 +36,15 @@ const Services = () => {
 
   return (
     <section className="py-14 bg-gray-100 mx-auto">
-      <div className="container mx-auto px-24">
-        <Heading addClass="text-center">Our Services</Heading>
-        <p className="text-center w-3/4 mx-auto mb-10">
+      <div className="container mx-auto xl:px-24 lg:px-16 px-5 ">
+        <Heading addClass="md:text-center text-left">Our Services</Heading>
+        <p className="md:text-center text-left md:w-3/4 w-full mx-auto md:mb-10 mb-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas
           ea accusamus, atque obcaecati impedit laboriosam nemo aliquam id qui
           deserunt dolorum voluptatem sequi optio voluptatum natus ullam?
           Cupiditate, quis.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 items-center justify-center">
           {services.map((service, index) => (
             <div
               key={index}

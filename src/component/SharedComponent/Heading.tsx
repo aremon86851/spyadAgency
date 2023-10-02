@@ -2,7 +2,11 @@ import React from "react";
 
 const Heading = ({ children, addClass = "" }) => {
   return (
-    <h2 className={`text-4xl font-semibold mb-8 ${addClass}`}>{children}</h2>
+    <h2
+      className={`md:text-4xl text-3xl font-semibold md:mb-8 mb-6 ${addClass}`}
+    >
+      {children}
+    </h2>
   );
 };
 

@@ -5,11 +5,11 @@ const DropdownContent = () => {
   return (
     <div className="dropdown-content">
       <div>
-        <div className="inside-dropdown-content px-24  container mx-auto">
+        <div className="inside-dropdown-content xl:px-24 lg:px-16 px-5 container mx-auto">
           <h2 className="font-bold text-2xl mb-7 text-blue-600">
             Our Services
           </h2>
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid xl:grid-cols-4 grid-cols-3 gap-6">
             <div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
@@ -62,7 +62,7 @@ const DropdownContent = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="xl:block hidden">
               <a
                 href="#"
                 className="p-8 text-left bg-local bg-gray-500 bg-center bg-no-repeat bg-cover rounded-lg bg-blend-multiply hover:bg-blend-multiply dark:hover:bg-blend-darken  justify-center items-start flex-col h-full last-col-drpdwn"

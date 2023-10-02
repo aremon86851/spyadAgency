@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Heading from "./Heading";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
@@ -58,64 +58,88 @@ const reviews = [
   },
 ];
 export default function Testimonial() {
+  const [perView, setPerView] = useState(4);
+  useEffect(() => {
+    const windowWidth = window.screen.availWidth;
+    if (windowWidth <= 768) {
+      return setPerView(1);
+    } else if (windowWidth < 1024) {
+      return setPerView(2);
+    } else if (windowWidth < 1024) {
+      return setPerView(3);
+    }
+    return setPerView(4);
+  }, [perView]);
+  console.log(perView);
+
   return (
-    <div
-      style={{ background: "linear-gradient(280deg, black, rgb(49 70 111))" }}
-    >
-      <div className="container px-24 py-14 mx-auto">
-        <Heading addClass="text-white text-center">Our Client Says</Heading>
+    <>
+      {perView && (
         <>
-          <Swiper
-            slidesPerView={4}
-            spaceBetween={30}
-            grabCursor={true}
-            pagination={{
-              clickable: true,
+          <div
+            style={{
+              background: "linear-gradient(280deg, black, rgb(49 70 111))",
             }}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            modules={[FreeMode, Pagination, Autoplay]}
-            className="mySwiper mt-20"
           >
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
+            <div className="container xl:px-24 lg:px-16 px-5  py-14 mx-auto">
+              <Heading addClass="text-white text-center">
+                Our Client Says
+              </Heading>
               <>
-                <SwiperSlide>
-                  <div className=" mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12">
-                    <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
-                      <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                          Very easy this was to integrate
-                        </h3>
-                        <p className="my-4">
-                          If you care for your time, I hands down would go with
-                          this."
-                        </p>
-                      </blockquote>
-                      <figcaption className="flex items-center justify-center space-x-3">
-                        <Image
-                          className="rounded-full w-9 h-9"
-                          src="/images/avatar.png"
-                          alt="profile picture"
-                          width={36}
-                          height={36}
-                        />
-                        <div className="space-y-0.5 font-medium dark:text-white text-left">
-                          <div>Bonnie Green</div>
-                          <div className="text-sm text-gray-500 dark:text-gray-400">
-                            Developer at Open AI
-                          </div>
+                <Swiper
+                  slidesPerView={perView}
+                  spaceBetween={30}
+                  grabCursor={true}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  modules={[FreeMode, Pagination, Autoplay]}
+                  className="mySwiper mt-20"
+                >
+                  {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
+                    <>
+                      <SwiperSlide>
+                        <div className=" mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12">
+                          <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
+                            <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                                Very easy this was to integrate
+                              </h3>
+                              <p className="my-4">
+                                If you care for your time, I hands down would go
+                                with this."
+                              </p>
+                            </blockquote>
+                            <figcaption className="flex items-center justify-center space-x-3">
+                              <Image
+                                className="rounded-full w-9 h-9"
+                                src="/images/avatar.png"
+                                alt="profile picture"
+                                width={36}
+                                height={36}
+                              />
+                              <div className="space-y-0.5 font-medium dark:text-white text-left">
+                                <div>Bonnie Green</div>
+                                <div className="text-sm text-gray-500 dark:text-gray-400">
+                                  Developer at Open AI
+                                </div>
+                              </div>
+                            </figcaption>
+                          </figure>
                         </div>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </SwiperSlide>
+                      </SwiperSlide>
+                    </>
+                  ))}
+                </Swiper>
               </>
-            ))}
-          </Swiper>
+            </div>
+          </div>
         </>
-      </div>
-    </div>
+      )}
+    </>
   );
 }

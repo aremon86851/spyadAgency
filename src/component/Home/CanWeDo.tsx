@@ -5,16 +5,18 @@ import Heading from "../SharedComponent/Heading";
 const CanWeDo = () => {
   return (
     <section className="can-we-do">
-      <div className="py-14 container mx-auto px-24">
-        <Heading addClass="text-white text-center">The Spyad-Agencys</Heading>
-        <p className="text-center w-3/4 mx-auto mb-10 text-white">
+      <div className="py-14 container mx-auto xl:px-24 lg:px-16 px-5 ">
+        <Heading addClass="text-white md:text-center text-left">
+          The Spyad-Agencys
+        </Heading>
+        <p className="md:text-center text-left md:w-3/4 w-full mx-auto md:mb-10 mb-4 text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas
           ea accusamus, atque obcaecati impedit laboriosam nemo aliquam id qui
           deserunt dolorum voluptatem sequi optio voluptatum natus ullam?
           Cupiditate, quis.
         </p>
         <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 px-4 mt-6 md:mt-0 text-end flex justify-start">
+          <div className="md:w-1/2 md:px-4 px-0 mt-6 md:mt-0 text-end flex justify-start md:mb-0 mb-4 ">
             <Image
               src="/images/whoWeAre.jpg"
               alt="Image by rawpixel.com on Freepik"
@@ -23,7 +25,7 @@ const CanWeDo = () => {
               height="385"
             />
           </div>
-          <div className="md:w-1/2 px-4">
+          <div className="md:w-1/2 md:px-4 px-0">
             <h3 className="text-2xl font-semibold text-white mb-3">
               Our Mission
             </h3>

@@ -61,18 +61,18 @@ const Services = ()=>{
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
         className: "py-14 bg-gray-100 mx-auto",
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            className: "container mx-auto px-24",
+            className: "container mx-auto xl:px-24 lg:px-16 px-5 ",
             children: [
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_SharedComponent_Heading__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
-                    addClass: "text-center",
+                    addClass: "md:text-center text-left",
                     children: "Our Services"
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                    className: "text-center w-3/4 mx-auto mb-10",
+                    className: "md:text-center text-left md:w-3/4 w-full mx-auto md:mb-10 mb-4",
                     children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas ea accusamus, atque obcaecati impedit laboriosam nemo aliquam id qui deserunt dolorum voluptatem sequi optio voluptatum natus ullam? Cupiditate, quis."
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-center",
+                    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 items-center justify-center",
                     children: services.map((service, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                             className: "flex flex-col items-center rounded-lg bg-gradient-to-r from-black to-blue-900 shadow-xl p-8 transition-transform hover:scale-105",
                             children: [

@@ -36,10 +36,10 @@ const Hero = () => {
   ];
   return (
     <section className="mx-auto bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
-      <div className="container px-24 mx-auto  text-center py-24 lg:pt-60 lg:pb-36">
-        <div className="grid grid-cols-2 gap-5">
+      <div className="container xl:px-24 lg:px-16 px-5 mx-auto  text-center py-24 lg:pt-60 lg:pb-36">
+        <div className="md:grid grid-cols-2 gap-5 flex flex-col-reverse">
           <div>
-            <h3 className="text-left text-blue-500 mb-2 font-semibold text-3xl text-primary">
+            <h3 className="text-left text-blue-500 mb-2 font-semibold md:text-3xl text-2xl text-primary">
               <ReactTypingEffect
                 text={typingText}
                 eraseDelay={600}
@@ -47,7 +47,7 @@ const Hero = () => {
                 typingDelay={200}
               />
             </h3>
-            <h1 className="mb-4 text-4xl text-left font-extrabold tracking-tight leading-7 text-white md:text-5xl">
+            <h1 className="mb-4 xl:text-5xl text-2xl text-left font-extrabold tracking-tight leading-10 text-white md:text-3xl">
               Exploring Next-Gen Digital Innovations
             </h1>
             <p className="text-left mb-8 text-lg font-normal text-gray-300 lg:text-xl ">

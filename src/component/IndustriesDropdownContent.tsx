@@ -2,13 +2,13 @@ import React from "react";
 
 const IndustriesDropdownContent = () => {
   return (
-    <div className="dropdown-content">
+    <div className="dropdown-content md:block hidden">
       <div>
-        <div className="inside-dropdown-content px-24  container mx-auto">
+        <div className="inside-dropdown-content xl:px-24 lg:px-16 px-5 container mx-auto">
           <h2 className="font-bold text-2xl mb-7 text-blue-600">
             Our Expertise Industry
           </h2>
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid xl:grid-cols-4 grid-cols-3 gap-6">
             <div>
               <ul className="text-gray-500 list-none list-inside">
                 <li className="mb-4 text-lg font-semibold text-black">
@@ -51,7 +51,7 @@ const IndustriesDropdownContent = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="xl:block  hidden">
               <a
                 href="#"
                 className="p-8 text-left bg-local bg-gray-500 bg-center bg-no-repeat bg-cover rounded-lg bg-blend-multiply hover:bg-blend-multiply dark:hover:bg-blend-darken  justify-center items-start flex-col h-full last-col-drpdwn"

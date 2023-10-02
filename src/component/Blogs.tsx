@@ -4,9 +4,9 @@ import Heading from "./SharedComponent/Heading";
 const Blogs = () => {
   return (
     <section className="bg-gray-100">
-      <div className=" container mx-auto px-24 py-14">
+      <div className=" container mx-auto xl:px-24 lg:px-16 px-5  py-14">
         <Heading addClass="text-center">Latest Blogs</Heading>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
           {[1, 2, 3].map((num) => (
             <>
               <div className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

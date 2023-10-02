@@ -74,98 +74,117 @@ const reviews = [
     }
 ];
 function Testimonial() {
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-        style: {
-            background: "linear-gradient(280deg, black, rgb(49 70 111))"
-        },
-        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            className: "container px-24 py-14 mx-auto",
-            children: [
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Heading__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
-                    addClass: "text-white text-center",
-                    children: "Our Client Says"
-                }),
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_3__.Swiper, {
-                        slidesPerView: 4,
-                        spaceBetween: 30,
-                        grabCursor: true,
-                        pagination: {
-                            clickable: true
-                        },
-                        autoplay: {
-                            delay: 2500,
-                            disableOnInteraction: false
-                        },
-                        modules: [
-                            swiper_modules__WEBPACK_IMPORTED_MODULE_4__.FreeMode,
-                            swiper_modules__WEBPACK_IMPORTED_MODULE_4__.Pagination,
-                            swiper_modules__WEBPACK_IMPORTED_MODULE_4__.Autoplay
-                        ],
-                        className: "mySwiper mt-20",
-                        children: [
-                            1,
-                            2,
-                            3,
-                            4,
-                            5,
-                            6,
-                            7,
-                            8,
-                            9,
-                            10
-                        ].map((num)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_3__.SwiperSlide, {
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: " mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12",
-                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("figure", {
-                                            className: "flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700",
-                                            children: [
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("blockquote", {
-                                                    className: "max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400",
+    const [perView, setPerView] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(4);
+    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
+        const windowWidth = window.screen.availWidth;
+        if (windowWidth <= 768) {
+            return setPerView(1);
+        } else if (windowWidth < 1024) {
+            return setPerView(2);
+        } else if (windowWidth < 1024) {
+            return setPerView(3);
+        }
+        return setPerView(4);
+    }, [
+        perView
+    ]);
+    console.log(perView);
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: perView && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                style: {
+                    background: "linear-gradient(280deg, black, rgb(49 70 111))"
+                },
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "container xl:px-24 lg:px-16 px-5  py-14 mx-auto",
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Heading__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
+                            addClass: "text-white text-center",
+                            children: "Our Client Says"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_3__.Swiper, {
+                                slidesPerView: perView,
+                                spaceBetween: 30,
+                                grabCursor: true,
+                                pagination: {
+                                    clickable: true
+                                },
+                                autoplay: {
+                                    delay: 2500,
+                                    disableOnInteraction: false
+                                },
+                                modules: [
+                                    swiper_modules__WEBPACK_IMPORTED_MODULE_4__.FreeMode,
+                                    swiper_modules__WEBPACK_IMPORTED_MODULE_4__.Pagination,
+                                    swiper_modules__WEBPACK_IMPORTED_MODULE_4__.Autoplay
+                                ],
+                                className: "mySwiper mt-20",
+                                children: [
+                                    1,
+                                    2,
+                                    3,
+                                    4,
+                                    5,
+                                    6,
+                                    7,
+                                    8,
+                                    9,
+                                    10
+                                ].map((num)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_3__.SwiperSlide, {
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                className: " mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12",
+                                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("figure", {
+                                                    className: "flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700",
                                                     children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                                            className: "text-lg font-semibold text-gray-900 dark:text-white",
-                                                            children: "Very easy this was to integrate"
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                            className: "my-4",
-                                                            children: 'If you care for your time, I hands down would go with this."'
-                                                        })
-                                                    ]
-                                                }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("figcaption", {
-                                                    className: "flex items-center justify-center space-x-3",
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_5___default()), {
-                                                            className: "rounded-full w-9 h-9",
-                                                            src: "/images/avatar.png",
-                                                            alt: "profile picture",
-                                                            width: 36,
-                                                            height: 36
-                                                        }),
-                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                            className: "space-y-0.5 font-medium dark:text-white text-left",
+                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("blockquote", {
+                                                            className: "max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400",
                                                             children: [
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                                    children: "Bonnie Green"
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                                                                    className: "text-lg font-semibold text-gray-900 dark:text-white",
+                                                                    children: "Very easy this was to integrate"
                                                                 }),
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                                    className: "text-sm text-gray-500 dark:text-gray-400",
-                                                                    children: "Developer at Open AI"
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                    className: "my-4",
+                                                                    children: 'If you care for your time, I hands down would go with this."'
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("figcaption", {
+                                                            className: "flex items-center justify-center space-x-3",
+                                                            children: [
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_5___default()), {
+                                                                    className: "rounded-full w-9 h-9",
+                                                                    src: "/images/avatar.png",
+                                                                    alt: "profile picture",
+                                                                    width: 36,
+                                                                    height: 36
+                                                                }),
+                                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                                    className: "space-y-0.5 font-medium dark:text-white text-left",
+                                                                    children: [
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                            children: "Bonnie Green"
+                                                                        }),
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                            className: "text-sm text-gray-500 dark:text-gray-400",
+                                                                            children: "Developer at Open AI"
+                                                                        })
+                                                                    ]
                                                                 })
                                                             ]
                                                         })
                                                     ]
                                                 })
-                                            ]
+                                            })
                                         })
-                                    })
-                                })
-                            }))
-                    })
+                                    }))
+                            })
+                        })
+                    ]
                 })
-            ]
+            })
         })
     });
 }

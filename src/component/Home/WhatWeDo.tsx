@@ -25,16 +25,18 @@ const WhatWeDo = () => {
     <section
       style={{ background: "linear-gradient(118deg, black, rgb(49 70 111))" }}
     >
-      <div className="py-14 container mx-auto px-24">
-        <Heading addClass="text-white text-center">Our Methodology</Heading>
-        <p className="text-center w-3/4 mx-auto mb-10 text-white">
+      <div className="py-14 container mx-auto xl:px-24 lg:px-16 px-5 ">
+        <Heading addClass="text-white md:text-center text-left">
+          Our Methodology
+        </Heading>
+        <p className="md:text-center md:w-3/4 w-full text-left mx-auto mb-10 text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas
           ea accusamus, atque obcaecati impedit laboriosam nemo aliquam id qui
           deserunt dolorum voluptatem sequi optio voluptatum natus ullam?
           Cupiditate, quis.
         </p>
         <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 lg:w-7/12  grid grid-cols-2 px-4 mt-6 md:mt-0 text-end gap-4">
+          <div className="md:w-1/2 lg:w-7/12 w-full grid grid-cols-2 md:px-4 px-0 mt-6 md:mt-0 mb-4 md:mb-0 text-end gap-4">
             {ourProcess.map((process, i) => (
               <>
                 <div
@@ -57,7 +59,7 @@ const WhatWeDo = () => {
               </>
             ))}
           </div>
-          <div className="md:w-1/2 lg:w-5/12 px-4">
+          <div className="md:w-1/2 lg:w-5/12 md:px-4 px-0">
             <h3 className="text-2xl font-semibold text-white mb-4">
               How We Help!
             </h3>
