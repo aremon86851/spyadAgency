@@ -13,14 +13,16 @@ const FAQ = ({ items }) => {
 
   return (
     <section className="">
-      <div className="container py-16 px-24 mx-auto">
+      <div className="container py-16  xl:px-24 lg:px-16 px-5 mx-auto">
         <Heading>Frequently Ask Questions</Heading>
-        <p className={`w-2/4 -mt-4 text-base font-semibold mb-10`}>
+        <p
+          className={`md:w-2/4 w-full -mt-4 text-base font-semibold md:mb-10 mb-4`}
+        >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, eum
           placeat. Incidunt vel necessitatibus minus iure a fugit autem
           aspernatur.
         </p>
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-0">
           <div>
             <div className="accordion ">
               {items?.slice(0, faqShowOnLeftSide)?.map((item, index) => (

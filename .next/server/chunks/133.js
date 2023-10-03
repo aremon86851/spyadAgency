@@ -68,7 +68,7 @@ const Services = ()=>{
                     children: "Our Services"
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                    className: "md:text-center text-left md:w-3/4 w-full mx-auto md:mb-10 mb-4",
+                    className: "md:text-center text-left md:w-3/4 w-full mx-auto md:mb-10 mb-4 md:block hidden",
                     children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas ea accusamus, atque obcaecati impedit laboriosam nemo aliquam id qui deserunt dolorum voluptatem sequi optio voluptatum natus ullam? Cupiditate, quis."
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {

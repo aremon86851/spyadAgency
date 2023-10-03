@@ -5,9 +5,9 @@ import Image from "next/image";
 const AboutService = () => {
   return (
     <section className="can-we-do">
-      <div className="py-14 container mx-auto px-24">
+      <div className="py-14 container mx-auto  xl:px-24 lg:px-16 px-5">
         <Heading addClass="text-white text-left">About Service</Heading>
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col md:gap-10 gap-4 md:flex-row items-center">
           <div className="md:w-1/2 px-0 mt-6 md:mt-0 text-end flex justify-start">
             <Image
               src="/images/whoWeAre.jpg"
@@ -17,7 +17,7 @@ const AboutService = () => {
               height="385"
             />
           </div>
-          <div className="md:w-1/2 px-4">
+          <div className="md:w-1/2 md:px-4 px-0">
             <h3 className="text-2xl font-semibold text-white mb-3">Service</h3>
             <p className="text-gray-300 mb-6">
               At XYZ Company, we are committed to providing innovative solutions

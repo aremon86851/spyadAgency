@@ -28,7 +28,7 @@ const Banner = ({ data })=>{
                         children: data.name
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                        className: "mb-8 text-lg font-normal text-gray-300 lg:text-xl w-3/4 mx-auto text-center",
+                        className: "mb-8 text-lg font-normal text-gray-300 lg:text-xl w-full md:w-3/4 mx-auto text-center",
                         children: data.description
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {

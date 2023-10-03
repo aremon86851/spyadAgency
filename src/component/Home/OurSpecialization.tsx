@@ -4,18 +4,18 @@ import Heading from "../SharedComponent/Heading";
 const OurSpecialization = ({ data, from = "" }) => {
   return (
     <section className={`${from ? "can-we-do" : ""}`}>
-      <div className="container mx-auto px-24 py-14">
+      <div className="container mx-auto  xl:px-24 lg:px-16 px-5 py-14">
         <Heading addClass={`text-left ${from ? "text-white" : "text-black"}`}>
           {data?.heading}
         </Heading>
         <p
-          className={`w-2/4 -mt-4 text-base font-semibold  ${
+          className={`md:w-2/4 w-full -mt-4 text-base font-semibold  ${
             from ? "text-white" : "text-black"
           }`}
         >
           {data?.detail}
         </p>
-        <div className="grid grid-cols-4 gap-8 mt-16 ">
+        <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8 md:mt-16 mt-4 ">
           {data?.specialization?.map((special) => (
             <>
               <div

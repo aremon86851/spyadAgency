@@ -3,7 +3,7 @@ import Heading from "../SharedComponent/Heading";
 const Teams = () => {
   return (
     <section className="bg-gray-100">
-      <div className="container py-14 px-24 mx-auto">
+      <div className="container py-14  xl:px-24 lg:px-16 px-5 mx-auto">
         <Heading>Faces behind Our Success</Heading>
         <div className="">
           <div className="faces-behind-our-success flex gap-5 overflow-auto">

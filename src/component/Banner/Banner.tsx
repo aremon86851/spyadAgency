@@ -9,7 +9,7 @@ const Banner = ({ data }) => {
           <h1 className="text-center mb-4 text-4xl font-extrabold tracking-tight leading-7 text-white md:text-5xl">
             {data.name}
           </h1>
-          <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl w-3/4 mx-auto text-center">
+          <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl w-full md:w-3/4 mx-auto text-center">
             {data.description}
           </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
