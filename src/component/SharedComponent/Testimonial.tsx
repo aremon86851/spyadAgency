@@ -70,8 +70,6 @@ export default function Testimonial() {
     }
     return setPerView(4);
   }, [perView]);
-  console.log(perView);
-
   return (
     <>
       {perView && (

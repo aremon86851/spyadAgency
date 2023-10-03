@@ -85,7 +85,7 @@ body {
   border: none;
   outline: none;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 420px) {
   .subscription-area-form div {
     flex-direction: column;
   }
