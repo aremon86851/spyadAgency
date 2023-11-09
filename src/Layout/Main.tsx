@@ -9,6 +9,14 @@ const Main = ({ children }) => {
     <div className="bg-white">
       <div className="mx-auto relative ">
         <Header />
+        <Head>
+          <title>Spyde Agency</title>
+          <link
+            rel="icon"
+            type="image/x-icon"
+            href="/images/fav-logo.png"
+          ></link>
+        </Head>
 
         <div data-dial-init className="fixed right-6 bottom-6 group z-50">
           <div

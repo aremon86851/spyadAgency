@@ -37,12 +37,14 @@ const Services = () => {
   return (
     <section className="py-14 bg-gray-100 mx-auto">
       <div className="container mx-auto xl:px-24 lg:px-16 px-5 ">
-        <Heading addClass="md:text-center text-left">Our Services</Heading>
-        <p className="md:text-center text-left md:w-3/4 w-full mx-auto md:mb-10 mb-4 md:block hidden">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas
-          ea accusamus, atque obcaecati impedit laboriosam nemo aliquam id qui
-          deserunt dolorum voluptatem sequi optio voluptatum natus ullam?
-          Cupiditate, quis.
+        <Heading addClass="md:text-center text-left text-black">
+          Our Services
+        </Heading>
+        <p className="md:text-center text-left text-black md:w-3/4 w-full mx-auto md:mb-10 mb-4 md:block hidden">
+          With our Strong and Experienced Person, we are giving you the greatest
+          services available anywhere in the globe. We will provide you with all
+          of the support you require to digitize your company. Simply look at
+          our Services and let us know the services you require.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 items-center justify-center">
           {services.map((service, index) => (

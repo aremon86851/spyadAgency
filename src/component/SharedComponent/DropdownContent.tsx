@@ -11,7 +11,7 @@ const DropdownContent = () => {
           </h2>
           <div className="grid xl:grid-cols-4 grid-cols-3 gap-6">
             <div>
-              <p>
+              <p className="text-black">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
                 nobis impedit illum, dolores sed sint iure suscipit officia
                 voluptate nesciunt unde quo atque, incidunt sunt soluta

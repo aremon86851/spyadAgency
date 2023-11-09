@@ -48,11 +48,11 @@ const Hero = () => {
               />
             </h3>
             <h1 className="mb-4 xl:text-5xl text-2xl text-left font-extrabold tracking-tight leading-10 text-white md:text-3xl">
-              Exploring Next-Gen Digital Innovations
+              Your company's digital future already exists here.
             </h1>
             <p className="text-left mb-8 text-lg font-normal text-gray-300 lg:text-xl ">
-              Here at Flowbite we focus on markets where technology, innovation,
-              and capital can unlock long-term value and drive economic growth.
+              By digitizing your business and implementing cutting-edge
+              technology, Spyad has been working to boost your monthly revenue.
             </p>
             <div className="flex flex-col space-y-4 sm:flex-row sm:justify-start sm:space-y-0 sm:space-x-4">
               <a

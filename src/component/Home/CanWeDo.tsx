@@ -10,10 +10,11 @@ const CanWeDo = () => {
           The Spyad-Agencys
         </Heading>
         <p className="md:text-center text-left md:w-3/4 w-full mx-auto md:mb-10 mb-4 text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas
-          ea accusamus, atque obcaecati impedit laboriosam nemo aliquam id qui
-          deserunt dolorum voluptatem sequi optio voluptatum natus ullam?
-          Cupiditate, quis.
+          Spyad Agency is at the forefront of revolutionizing marketing
+          strategies, embodying innovation, and fueling brand success. Our team
+          of dynamic professionals harnesses the power of market insights,
+          cutting-edge technologies, and creative brilliance to craft campaigns
+          that leave a lasting impression.
         </p>
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:px-4 px-0 mt-6 md:mt-0 text-end flex justify-start md:mb-0 mb-4 ">
@@ -30,10 +31,16 @@ const CanWeDo = () => {
               Our Mission
             </h3>
             <p className="text-gray-300 mb-6">
-              At XYZ Company, we are committed to providing innovative solutions
-              that make a positive impact on our clients and the world. Our
-              mission is to unlock potential, drive growth, and create value
-              through technology and innovation.
+              A marketing agency's main objective is to help companies promote
+              their goods and services to their target audience. This calls for
+              a complex strategy aimed at building brand recognition,
+              encouraging consumer interaction, and eventually raising sales and
+              income.
+            </p>
+            <p className="text-gray-300 mb-6">
+              Spyad uses a variety of channels, including social media,
+              traditional advertising, digital platforms, and more, to create
+              engaging tactics that resonate with the target demographic.
             </p>
             <button
               type="button"

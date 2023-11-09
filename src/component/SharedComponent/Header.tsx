@@ -65,17 +65,17 @@ const Header = () => {
   ];
   return (
     <header className="absolute inset-x-0 top-0 z-50 container web-header">
-      <nav className="can-we-do dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-        <div className="container flex flex-wrap items-center justify-between mx-auto py-4 xl:px-24 lg:px-16 px-5">
+      <nav className="dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div className="container flex flex-wrap items-center justify-between mx-auto py-0 xl:px-24 lg:px-16 px-5">
           <a href="/" className="flex items-center">
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="h-8 mr-3"
+              src="/images/logo.png"
+              className="h-8 mr-3 spyder-logo"
               alt="Flowbite Logo"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap text-white dark:text-white">
+            {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-white dark:text-white">
               Spyad
-            </span>
+            </span> */}
           </a>
           <div className="flex md:d-none">
             {/* <button

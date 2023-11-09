@@ -16,29 +16,30 @@ const WhoWeAre = () => {
         <div className="md:grid grid-cols-6 gap-10 items-center mb-10 hidden ">
           <div className="col-span-3">
             <h3 className="text-2xl font-bold text-white w-3/4">
-              Our spyde agency provide the very good good good good good good
-              services
+              Spyad assists you in building your company's digital future and a
+              substantial brand value in your local or online market.
             </h3>
           </div>
           <div className="col-span-3">
             <p className="text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              odio quam unde! Tempore quod fugiat nam repellendus ad autem
-              repudiandae eveniet dolorem officia, iste dicta beatae ipsa sed
-              impedit. Nemo?
+              Although the business is yours, it is our obligation to grow sales
+              and monthly revenue. We will help you create your own online as
+              well as offline market. With our help, you may advertise your
+              company and products to offline and online audiences.
             </p>
           </div>
         </div>
         <div className="flex flex-col-reverse md:flex-row items-center">
           <div className="md:w-1/2 px-4">
             <h3 className="text-2xl font-semibold text-white mb-3">
-              Our Mission
+              Importance Of Marketing
             </h3>
             <p className="text-gray-300 mb-6">
-              At XYZ Company, we are committed to providing innovative solutions
-              that make a positive impact on our clients and the world. Our
-              mission is to unlock potential, drive growth, and create value
-              through technology and innovation.
+              Reaching the correct audience is an important part of marketing;
+              it goes beyond simply exposing your goods or services to the
+              globe. A focus on your target market helps you deliver your
+              message to individuals who will be most likely to become valuable
+              clients.
             </p>
             <button
               type="button"

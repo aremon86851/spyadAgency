@@ -20,7 +20,7 @@ const WhyWorkWithUs = () => {
   return (
     <section className="bg-gray-100">
       <div className="container mx-auto xl:px-24 lg:px-16 px-5 py-14">
-        <Heading addClass="md:text-center text-left">
+        <Heading addClass="md:text-center text-left text-black">
           Reasons to Choose Us
         </Heading>
         <div className="flex justify-between sm:flex-row flex-col gap-6 xl:px-24 lg:px-16 px-5  pt-20">
