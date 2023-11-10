@@ -5,6 +5,7 @@ import "swiper/css/effect-cards";
 
 // import required modules
 import { Navigation, Autoplay } from "swiper/modules";
+import SpydeData from "@/config/SpydeData";
 const HeroCarrousel = () => {
   return (
     <>
@@ -22,26 +23,11 @@ const HeroCarrousel = () => {
         modules={[Autoplay, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide
-          style={{ backgroundColor: "red", height: 200, width: 100 }}
-        >
-          Slide 1
-        </SwiperSlide>
-        <SwiperSlide
-          style={{ backgroundColor: "red", height: 200, width: 100 }}
-        >
-          Slide 1
-        </SwiperSlide>
-        <SwiperSlide
-          style={{ backgroundColor: "red", height: 200, width: 100 }}
-        >
-          Slide 1
-        </SwiperSlide>
-        <SwiperSlide
-          style={{ backgroundColor: "red", height: 200, width: 100 }}
-        >
-          Slide 1
-        </SwiperSlide>
+        {SpydeData.heroSliderImg.map((img) => (
+          <SwiperSlide style={{ width: "100% !important" }}>
+            <img src={img} alt="images" className="w-full" />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

@@ -36,8 +36,8 @@ const Hero = () => {
   ];
   return (
     <section className="mx-auto bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
-      <div className="container xl:px-24 lg:px-16 px-5 mx-auto  text-center py-24 lg:pt-60 lg:pb-36">
-        <div className="md:grid grid-cols-2 gap-5 flex flex-col-reverse">
+      <div className="container xl:px-24 lg:px-16 px-9 mx-auto  text-center py-24 pt-40 lg:pt-60 lg:pb-36">
+        <div className="md:grid grid-cols-2 gap-5 flex flex-col-reverse items-center">
           <div>
             <h3 className="text-left text-blue-500 mb-2 font-semibold md:text-3xl text-2xl text-primary">
               <ReactTypingEffect
@@ -84,7 +84,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div>
+          <div className="md:block hidden">
             <HeroCarrousel />
           </div>
         </div>
