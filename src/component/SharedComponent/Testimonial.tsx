@@ -80,7 +80,7 @@ export default function Testimonial() {
             }}
           >
             <div className="container xl:px-24 lg:px-16 px-5  py-14 mx-auto">
-              <Heading addClass="text-white text-center">
+              <Heading addClass="text-white md:text-center text-left">
                 Our Client Says
               </Heading>
               <>

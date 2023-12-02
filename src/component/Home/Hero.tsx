@@ -87,6 +87,9 @@ const Hero = () => {
           <div className="md:block hidden">
             <HeroCarrousel />
           </div>
+          <div className="md:hidden block">
+            <img src="/images/hero4.jpg" alt="Hero img" />
+          </div>
         </div>
       </div>
     </section>

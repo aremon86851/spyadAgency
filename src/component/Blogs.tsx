@@ -5,7 +5,9 @@ const Blogs = () => {
   return (
     <section className="bg-gray-100">
       <div className=" container mx-auto xl:px-24 lg:px-16 px-5  py-14">
-        <Heading addClass="text-center">Latest Blogs</Heading>
+        <Heading addClass=" text-black md:text-center text-left">
+          Latest Blogs
+        </Heading>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
           {[1, 2, 3].map((num) => (
             <>

@@ -23,8 +23,8 @@ const HeroCarrousel = () => {
         modules={[Autoplay, Navigation]}
         className="mySwiper"
       >
-        {SpydeData.heroSliderImg.map((img) => (
-          <SwiperSlide style={{ width: "100% !important" }}>
+        {SpydeData.heroSliderImg.map((img, i) => (
+          <SwiperSlide key={i}>
             <img src={img} alt="images" className="w-full" />
           </SwiperSlide>
         ))}

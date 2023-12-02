@@ -7,10 +7,10 @@ const ContactUs = () => {
   return (
     <section className="bg-gray-100">
       <div className="container py-14 xl:px-24 lg:px-16 px-5 mx-auto">
-        <Heading>Contact</Heading>
+        <Heading addClass="text-black">Contact</Heading>
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-6">
           <div className="md:pl-4 pl-0">
-            <h4 className="font-semibold mb-5">Click to connect</h4>
+            <h4 className="font-semibold mb-5 text-black">Click to connect</h4>
             <ClickToConnect />
           </div>
           <div>
