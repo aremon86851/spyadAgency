@@ -1,5 +1,12 @@
 import React from "react";
-import { FaCode, FaLaptop, FaRocket } from "react-icons/fa";
+import {
+  FaCode,
+  FaLaptop,
+  FaRocket,
+  FaOpencart,
+  FaShopify,
+  FaProjectDiagram,
+} from "react-icons/fa";
 import Heading from "../SharedComponent/Heading";
 const Services = () => {
   const tickIcon = (
@@ -22,15 +29,23 @@ const Services = () => {
     },
     {
       icon: <FaLaptop className="text-3xl text-purple-500" />,
-      title: "App Development",
+      title: "WordPress Developer",
     },
     {
       icon: <FaRocket className="text-3xl text-green-500" />,
       title: "Digital Marketing",
     },
     {
-      icon: <FaRocket className="text-3xl text-green-500" />,
-      title: "Digital Marketing",
+      icon: <FaOpencart className="text-3xl text-green-500" />,
+      title: "Shopify Expert",
+    },
+    {
+      icon: <FaShopify className="text-3xl text-green-500" />,
+      title: "WooCommerce Expert",
+    },
+    {
+      icon: <FaProjectDiagram className="text-3xl text-green-500" />,
+      title: "Graphics Design",
     },
   ];
 
@@ -58,20 +73,6 @@ const Services = () => {
               <h3 className="text-xl text-white font-semibold mb-4">
                 {service.title}
               </h3>
-              <ul role="list" className="space-y-5 mt-0 mb-7">
-                <li className="flex space-x-3 items-center">
-                  {tickIcon}
-                  <span className="text-base font-normal leading-tight text-gray-300 dark:text-gray-400">
-                    2 team members
-                  </span>
-                </li>
-                <li className="flex space-x-3 items-center">
-                  {tickIcon}
-                  <span className="text-base font-normal leading-tight text-gray-300 dark:text-gray-400">
-                    2 team members
-                  </span>
-                </li>
-              </ul>
             </div>
           ))}
         </div>

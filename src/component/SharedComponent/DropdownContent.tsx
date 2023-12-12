@@ -12,10 +12,9 @@ const DropdownContent = () => {
           <div className="grid xl:grid-cols-4 grid-cols-3 gap-6">
             <div>
               <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                nobis impedit illum, dolores sed sint iure suscipit officia
-                voluptate nesciunt unde quo atque, incidunt sunt soluta
-                consequatur accusamus consequuntur amet.
+                The team of professionals at Spyad Agency is a dynamic mix of
+                visionary talented, specialist and analysts all united by a love
+                for marketing and web development innovation and quality.
               </p>
               {/* <button
                 type="button"

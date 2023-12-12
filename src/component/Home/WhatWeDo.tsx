@@ -30,10 +30,10 @@ const WhatWeDo = () => {
           Our Methodology
         </Heading>
         <p className="md:text-center md:w-3/4 w-full text-left mx-auto mb-10 text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas
-          ea accusamus, atque obcaecati impedit laboriosam nemo aliquam id qui
-          deserunt dolorum voluptatem sequi optio voluptatum natus ullam?
-          Cupiditate, quis.
+          The team of professionals at Spyad Agency is a dynamic mix of
+          visionary strategists, tech-savvy developers, creative designers, and
+          data-driven analysts, all united by a love for marketing and web
+          development innovation and quality.
         </p>
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 lg:w-7/12 w-full grid grid-cols-2 md:px-4 px-0 mt-6 md:mt-0 mb-4 md:mb-0 text-end gap-4">
@@ -63,11 +63,15 @@ const WhatWeDo = () => {
             <h3 className="text-2xl font-semibold text-white mb-4">
               How We Help!
             </h3>
+            <p className="text-gray-300 mb-2">
+              The team of professionals at Spyad Agency is a dynamic mix of
+              visionary strategists, tech-savvy developers, creative designers,
+              and data-driven analysts, all united by a love for marketing and
+              web development innovation and quality.
+            </p>
             <p className="text-gray-300 mb-6">
-              At XYZ Company, we are committed to providing innovative solutions
-              that make a positive impact on our clients and the world. Our
-              mission is to unlock potential, drive growth, and create value
-              through technology and innovation.
+              Each member brings a distinct set of talents and experiences to
+              the table, resulting in a creative and knowledgeable powerhouse.
             </p>
             <button
               type="button"
