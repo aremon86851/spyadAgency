@@ -61,7 +61,7 @@ const Services = () => {
   return (
     <Main>
       <Banner data={singleService} />
-      <AboutService />
+      <AboutService data={singleService?.aboutServices} />
       {/* Specialization for single services */}
       <OurSpecialization data={singleService?.techStack} />
       <OurSpecialization

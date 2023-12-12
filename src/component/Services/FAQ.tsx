@@ -14,13 +14,11 @@ const FAQ = ({ items }) => {
   return (
     <section className="">
       <div className="container py-16  xl:px-24 lg:px-16 px-5 mx-auto">
-        <Heading>Frequently Ask Questions</Heading>
+        <Heading addClass="text-black">Frequently Ask Questions</Heading>
         <p
-          className={`md:w-2/4 w-full -mt-4 text-base font-semibold md:mb-10 mb-4`}
+          className={`md:w-2/4 w-full -mt-4 text-black text-base font-semibold md:mb-10 mb-4`}
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, eum
-          placeat. Incidunt vel necessitatibus minus iure a fugit autem
-          aspernatur.
+          If you need solved some of your question then check it
         </p>
         <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-0">
           <div>
@@ -31,7 +29,7 @@ const FAQ = ({ items }) => {
                   key={item.id}
                 >
                   <div
-                    className={`accordion-title font-semibold p-2  ${
+                    className={`accordion-title text-black font-semibold p-2  ${
                       item.id === activeIndex ? "active" : ""
                     }`}
                     onClick={() => handleClick(item.id)}
@@ -39,7 +37,9 @@ const FAQ = ({ items }) => {
                     {item.title}
                   </div>
                   {item.id === activeIndex && (
-                    <div className="accordion-content p-2">{item.content}</div>
+                    <div className="accordion-content p-2 text-gray-500">
+                      {item.content}
+                    </div>
                   )}
                 </div>
               ))}
@@ -55,7 +55,7 @@ const FAQ = ({ items }) => {
                     key={item.id}
                   >
                     <div
-                      className={`accordion-title font-semibold p-2  ${
+                      className={`accordion-title text-black font-semibold p-2  ${
                         item.id === activeIndex ? "active" : ""
                       }`}
                       onClick={() => handleClick(item.id)}
@@ -63,7 +63,7 @@ const FAQ = ({ items }) => {
                       {item.title}
                     </div>
                     {item.id === activeIndex && (
-                      <div className="accordion-content p-2">
+                      <div className="accordion-content text-gray-500 p-2">
                         {item.content}
                       </div>
                     )}

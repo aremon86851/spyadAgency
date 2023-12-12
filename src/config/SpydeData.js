@@ -131,11 +131,15 @@ const SpydeData = {
       name: "Shopify Expert",
       processUrl: "shopify-expert",
       description:
-        "Hey my name is spyde agecy its works for  your projects. Hey my name is spyde agecy its works for  your projects.Hey my name is spyde agecy its works for  your projects.",
+        '"I know you"re a dreamer, and you have a Shopify Business dream." Our Shopify Solutions at the Spyad are a tribute to our creativity and competence in e-commerce solutions.',
       fillButton: {
         label: "Get Service",
         href: "#",
       },
+      aboutServices: [
+        ' We specialize in offering complete Shopify services that are tailored to your brand"s specific requirements. What separates us is our careful approach to creating seamless online stores that not only represent your business"s brand but also provide an exceptional customer experience.',
+        'Our expert development and design team specializes in maximizing Shopify"s features to create visually attractive, user-friendly, and conversion-driven websites. ',
+      ],
       specializationData: {
         heading: "Our Specialization",
         detail:

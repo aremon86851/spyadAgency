@@ -121,9 +121,11 @@ export default function Testimonial() {
                                 height={36}
                               />
                               <div className="space-y-0.5 font-medium dark:text-white text-left">
-                                <div>Bonnie Green</div>
+                                <div className="text-gray-500">
+                                  Bonnie Green
+                                </div>
                                 <div className="text-sm text-gray-500 dark:text-gray-400">
-                                  Developer at Open AI
+                                  Developer at Opens
                                 </div>
                               </div>
                             </figcaption>

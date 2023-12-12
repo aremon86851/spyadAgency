@@ -2,7 +2,7 @@ import React from "react";
 import Heading from "../SharedComponent/Heading";
 import Image from "next/image";
 
-const AboutService = () => {
+const AboutService = ({ data }) => {
   return (
     <section className="can-we-do">
       <div className="py-14 container mx-auto  xl:px-24 lg:px-16 px-5">
@@ -19,16 +19,29 @@ const AboutService = () => {
           </div>
           <div className="md:w-1/2 md:px-4 px-0">
             <h3 className="text-2xl font-semibold text-white mb-3">Service</h3>
-            <p className="text-gray-300 mb-6">
-              At XYZ Company, we are committed to providing innovative solutions
-              that make a positive impact on our clients and the world. Our
-              mission is to unlock potential.
-            </p>
-            <p className="text-gray-300 mb-6">
-              At XYZ Company, we are committed to providing innovative solutions
-              that make a positive impact on our clients and the world. Our
-              mission is to unlock potential.
-            </p>
+            {data?.length >= 0 ? (
+              <>
+                {data.map((pera) => (
+                  <>
+                    <p className="text-gray-300 mb-2">{pera}</p>
+                  </>
+                ))}
+              </>
+            ) : (
+              <>
+                <p className="text-gray-300 mb-6">
+                  At XYZ Company, we are committed to providing innovative
+                  solutions that make a positive impact on our clients and the
+                  world. Our mission is to unlock potential.
+                </p>
+                <p className="text-gray-300 mb-6">
+                  At XYZ Company, we are committed to providing innovative
+                  solutions that make a positive impact on our clients and the
+                  world. Our mission is to unlock potential.
+                </p>
+              </>
+            )}
+
             <button
               type="button"
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
